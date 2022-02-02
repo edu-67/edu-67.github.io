@@ -1,0 +1,89 @@
+:root{
+    --azul: #1bb4c5;
+}
+html{
+    font-size: 62.5%;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-image: url(../img/morado.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.logo{
+    margin-top: 7%;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+.titulo{
+    font-size: 3.8rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+body{
+    font-size: 2rem;
+    font-family: 'Overpass', sans-serif;
+}
+.contenedor{
+    margin-top: 3rem;
+    padding-top: 3rem;
+    Min-height: 95vh;
+    Min-width: 95vw;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 21px;
+    box-shadow: 0 19px 38px rgba(128, 128, 128, 0.3), 0 15px 12px rgba(128, 128, 128, 0.3);
+    text-align: center;
+}
+.contenedor-botones{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
+@media (min-width: 830px) {
+    .contenedor-botones{
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+.boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 1rem;
+    background-color: var(--azul);
+    color: white;
+    padding: .15rem 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-transform: none;
+    font-weight: bold;
+    border-radius: 4rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 830px) {
+    .boton{
+        width: auto;
+        margin-right: none;
+    }        
+}
